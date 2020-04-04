@@ -47,14 +47,14 @@
       downloadLink.download = 'acetest.wav';
     });
               console.log(e.inputBuffer);
-            };
+            //};
 
 		  /*
 			var wavesurfer = WaveSurfer.create({
 				container: '#waveform',
 				waveColor: 'violet',
 				progressColor: 'purple'
-			});*/
+			});
 
 			//check if stop button is clicked
 			stopButton.addEventListener('click', function() {
@@ -78,7 +78,7 @@
 	    mediaRecorder.addEventListener('stop', function() {
 	      downloadLink.href = URL.createObjectURL(new Blob(recordedChunks));
 	      downloadLink.download = 'acetest.wav';
-	    });
+	    });*/
 
 	    mediaRecorder.start();
 	  };
